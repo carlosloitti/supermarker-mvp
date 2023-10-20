@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +26,7 @@ namespace Supermarket_mvp.Views
 
         private void AssociateAndRaiseViewEvents()
         {
-            BtnSearch.Click += delegate {SearchEvent?.Invoke(this, EventArgs.Empty); };
+            BtnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
 
             TxtSearch.KeyDown += (s, e) =>
 
@@ -59,24 +59,24 @@ namespace Supermarket_mvp.Views
             set { TxtPayModeObservation.Text = value; }
 
         }
-        public string SearchValue 
+        public string SearchValue
         {
             get { return TxtSearch.Text; }
             set { TxtSearch.Text = value; }
 
         }
-        public bool IsEdit 
+        public bool IsEdit
         {
             get { return isEdit; }
             set { isEdit = value; }
 
         }
-        public bool IsSuccesful 
+        public bool IsSuccesful
         {
             get { return isSuccesful; }
             set { isSuccesful = value; }
         }
-        public string Message 
+        public string Message
         {
             get { return message; }
             set { message = value; }
@@ -97,13 +97,38 @@ namespace Supermarket_mvp.Views
 
         }
 
-        
+
 
 
 
         private void tabPagePayModeList_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private static PayModeView instance;
+
+        public static PayModeView GetInstance()
+
+        {
+            if (instance == null || instance.IsDisposed)
+            {
+                    instance = new PayModeView();
+            }
+            else
+            {
+                if (instance.WindowState == FormWindowState.Minimized)
+                {
+                    instance.WindowState = FormWindowState.Normal;
+                }
+                instance.BringToFront();
+            }                
+           
+                       
+            
+            
+            return instance; 
+        
         }
     }
 }
