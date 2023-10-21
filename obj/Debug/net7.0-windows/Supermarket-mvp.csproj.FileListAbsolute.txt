@@ -42,3 +42,4 @@ C:\Users\CARLOS\Downloads\Supermarket-mvp\bin\Debug\net7.0-windows\runtimes\win\
 C:\Users\CARLOS\Downloads\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.csproj.AssemblyReference.cache
 C:\Users\CARLOS\Downloads\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket-mvp.csproj.CopyComplete
 C:\Users\CARLOS\Downloads\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.MainView.resources
+C:\Users\CARLOS\Downloads\Supermarket-mvp\obj\Debug\net7.0-windows\Supermarket_mvp.Views.ProductView.resources

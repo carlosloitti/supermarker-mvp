@@ -95,7 +95,7 @@ namespace Supermarket_mvp.Presenters
         {
             try
             {
-                var payMode = (PayModeModel)payModeBindingSource.Current;
+                var payMode = (PayModeModel) payModeBindingSource.Current;
 
                 repository.Delete(payMode.Id);
                 view.IsSuccesful = true;
@@ -104,7 +104,7 @@ namespace Supermarket_mvp.Presenters
 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 view.IsSuccesful= false;
